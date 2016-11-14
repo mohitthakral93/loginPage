@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form using HTML5 and CSS3</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body ng-app = "index">
+<div class="container" ng-controller = "loginController">
+	<section id="content">
+		<form action="">
+			<h1>Login Form</h1>
+			<div>
+				<input type="text" placeholder="Username" required="" id="username" ng-model = "userName" value ="{{userName}}" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" ng-model="password" value = "{{password}}" />
+			</div>
+			<div>
+				<input type = "submit" value="Log in" ng-click = "login()" />
+				<a href="#">Lost your password?</a>
+				<a href="#">Register</a>
+			</div>
+		</form><!-- form -->
+		<div class="button">
+			<a href="#">Download source file</a>
+		</div><!-- button -->
+	</section><!-- content -->
+</div><!-- container -->
+</body>
+	<script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
+	<script src="js/indexController.js"></script>
+</body>
+</html>
